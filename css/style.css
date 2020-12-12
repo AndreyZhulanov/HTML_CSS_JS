@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #373737;
+    text-align: center;
+}
+
+/* Секция с промоинформацией */
+.container-gray {
+    width: 1920;
+    background-color: #f4f4f4;
+    padding: 52px;
+}
+
+/* Стили контейнеров с цифровой информацией */
+.promo-digits {
+    font-size: 36px;
+    font-weight: 900;
+    color: #f39003;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.promo-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+/* Стили контейнеров промоинформации с иконками */
+.promocard {
+    background-color: #ffffff;
+    padding: 28px 0;
+    margin: 15px 0;
+}
+
+.promocard-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.promocard-description {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 230px;
+}
+
+.promocard-header {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.promocard-text {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+/* Стили секции Наша продукция  */
+.container-transparent {
+    width: 1920;
+    padding: 60px;
+}
+
+/* Заголовок */
+.header-h1 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #313131;
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+/* Волнистая черта под заголовком */
+.header-h1::before {
+    content: url(/img/pic_wave.png);
+    position: relative;
+    left: 160px;
+    top: 26px;
+}
+
+/* Стили для фото продукции с масштабируемостью картинок */
+.product-img {
+    display: inline-block;
+    width: 100%;
+    max-width: 424px;
+}
+
+.product-img>img {
+    width: 100%;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #313131;
+    margin-bottom: 28px;
+}
+
+/* Стили кнопок */
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 16px 24px;
+    border-radius: 5px;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+
+.button-transparent {
+    border: 1px solid #373737;
+    color: #373737;
+    opacity: 0.5;
+    background-color: #ffffff;
+    margin-right: 12px;
+}
+
+.button-orange {
+    border: 1px solid #ff9d00;
+    color: #ffffff;
+    background-color: #ff9d00;
+}
+
+/* Стили для экранов до 1200px */
+@media (max-width: 1200px) {
+    .promo-digits { 
+        font-size: 28px;
+    }
+    .promo-text {
+        font-size: 14px;
+    }
+    .promocard-icon {
+        width: 50px;
+    }
+    .promocard-header {
+        font-size: 14px;
+     }
+    .promocard-text {
+        font-size: 13px;
+    }
+}
+
+/* Снижаю отступы для экранов от 768px до 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container-gray {
+        padding: 60px 16px;
+    }
+    .container-transparent {
+        padding: 52px 20px;
+    }
+}
+
+/* Стили для экранов до 768px */
+@media (max-width: 768px) {
+    .container-gray {
+        padding: 60px 0px;
+    }
+    .container-transparent {
+        padding: 52px 0px;
+    }
+    .promocard-description {
+        width: 200px;
+    }
+    .header-h1 {
+        font-size: 27px;
+    }
+    button {
+        padding: 16px 12px;
+    }
+    .button-transparent {
+        margin-right: 6px;
+    }
+}
+
+/* Стили для экранов до 420px */
+@media (max-width: 420px) {
+    .header-h1::before {
+        content: none;
+    }
+    button {
+        margin-bottom: 16px;
+    }
+}
+

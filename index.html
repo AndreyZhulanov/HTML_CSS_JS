@@ -3,14 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Подключаю все шрифты, используемые на странице -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ДЗ - Добрый картон</title>
 </head>
 <body>
-  <h1>Заголовок</h1>
 
-  <p>
-    Красивый параграф
-  </p>
+<!-- Секция с промо информацией   -->
+<section class="container-gray">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- 3 контейнера промо информации в цифрах -->
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promo">
+          <p class="promo-digits">
+            5 лет
+          </p>
+          <p class="promo-text">
+            На рынке изделий из гофрокартона
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promo">
+          <p class="promo-digits">
+            до 5 000 000 м2
+          </p>
+          <p class="promo-text">
+            Ежемесячный объем производства гофрокартона
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promo">
+          <p class="promo-digits">
+            4 000 м2
+          </p>
+          <p class="promo-text">
+            Площадь склада
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 6 карточек с промоинформацией с иконками -->
+    <div class="row justify-content-center">
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promocard">
+
+          <div class="promocard-icon">
+            <img src="/img/icon_01.png" alt="Иконка Производство">
+          </div>
+
+          <div class="promocard-description">
+            <p class="promocard-header">
+              Производство
+            </p>
+            <p class="promocard-text">
+              4 технологические линии способны выполнить любой заказ любой сложности
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promocard">
+
+          <div class="promocard-icon">
+            <img src="/img/icon_02.png" alt="Иконка Образцы">
+          </div>
+
+          <div class="promocard-description">
+            <p class="promocard-header">
+              Бесплатные образцы
+            </p>
+            <p class="promocard-text">
+              Бесплатно делаем образцы гофроупаковки - это помогает заранее увидеть упаковку
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promocard">
+
+          <div class="promocard-icon">
+            <img src="/img/icon_03.png" alt="Иконка Качество">
+          </div>
+
+          <div class="promocard-description">
+            <p class="promocard-header">
+              Стабильное качество
+            </p>
+            <p class="promocard-text">
+              Собственная лаборатория контролирует качество на каждом этапе производства
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promocard">
+
+          <div class="promocard-icon">
+            <img src="/img/icon_04.png" alt="Иконка Запас">
+          </div>
+
+          <div class="promocard-description">
+            <p class="promocard-header">
+              Страховой запас
+            </p>
+            <p class="promocard-text">
+              Можем хранить запас гофропродукции на своих складах и поставлять его партиями
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promocard">
+
+          <div class="promocard-icon">
+            <img src="/img/icon_05.png" alt="Иконка Флексопечать">
+          </div>
+
+          <div class="promocard-description">
+            <p class="promocard-header">
+              Флексопечать
+            </p>
+            <p class="promocard-text">
+              Возможно нанесение вашего логотипа,текста или манипуляционных знаков
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="promocard">
+
+          <div class="promocard-icon">
+            <img src="/img/icon_06.png" alt="Иконка Гидрофобные добавки">
+          </div>
+
+          <div class="promocard-description">
+            <p class="promocard-header">
+              Гидрофобные добавки
+            </p>
+            <p class="promocard-text">
+              На производстве реализована технология, которая позволяет гофрокартону стать прочнее
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+  <!-- Секция "Наша продукция" -->
+<section class="container-transparent">
+
+  <h1 class="header-h1">
+    НАША ПРОДУКЦИЯ
+  </h1>
+
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- 4 блока с фото продукции, подписями и кнопками -->
+      <div class="col-12 col-sm-6 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="products">
+
+          <div class="product-img">
+            <img src="/img/product_sample_01.jpg" alt="Гофрокороб 4-х клапанный">
+          </div>
+
+          <div class="product-title">
+            Гофрокороб 4-х клапанный
+          </div>
+
+          <div class="product-buttons">
+            <button class="button-transparent">Подробнее</button>
+            <button class="button-orange">Получить расчет</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="products">
+
+          <div class="product-img">
+            <img src="/img/product_sample_02.jpg" alt="Гофролоток">
+          </div>
+
+          <div class="product-title">
+            Гофролоток
+          </div>
+
+          <div class="product-buttons">
+            <button class="button-transparent">Подробнее</button>
+            <button class="button-orange">Получить расчет</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="products">
+
+          <div class="product-img">
+            <img src="/img/product_sample_03.jpg" alt="Гофрокороб самосборный (сложная высечка)">
+          </div>
+
+          <div class="product-title">
+            Гофрокороб самосборный (сложная высечка)
+          </div>
+
+          <div class="product-buttons">
+            <button class="button-transparent">Подробнее</button>
+            <button class="button-orange">Получить расчет</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 pr-1 pl-1 pr-md-2 pl-md-2 pr-xl-3 pl-xl-3">
+        <div class="products">
+
+          <div class="product-img">
+            <img src="/img/product_sample_04.jpg" alt="Листовой гофрокартон">
+          </div>
+
+          <div class="product-title">
+            Листовой гофрокартон
+          </div>
+
+          <div class="product-buttons">
+            <button class="button-transparent">Подробнее</button>
+            <button class="button-orange">Получить расчет</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
   
 </body>
 </html>
