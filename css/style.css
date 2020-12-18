@@ -1,0 +1,120 @@
+/* Весь текст ввожу в параграфах, поэтому стиль шрифта указывают в описании стилей для тэга "р" */
+p {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #373737;
+}
+/* Разворачиваю строки с карточками в столбец */
+.promo {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+/* Каждый промоконтейнер содержит 3 карточки */
+.promo-container {
+    display:flex;
+    justify-content: center;
+}
+
+/* Описание стилей карточек */
+.promo-card {
+    margin: 15px;
+}
+
+/* Отступ между заголовком карточки и текстовым полем  */
+.text {
+    padding-top: 0.5em;
+}
+
+/* Стили для цифровой промо карточки */
+.digits {
+    text-align: center;
+    flex-basis: 334px;
+}
+
+.digits-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #f39003;
+}
+
+.digits-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Стили для карточке с иконками */
+/* Каждая карточка - отдельный flex с горизонтальным расположением элементов */
+.card-icon {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 294px;
+    background-color: white;
+    padding: 28px 20px;   
+}
+
+.card-icon-icon {
+    width: 56px;
+    text-align: center;
+}
+
+.card-icon-description {
+    flex-basis: 230px;
+}
+
+.card-icon-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.card-icon-text {
+    font-size: 14px;
+    font-weight: 300;
+ 
+}
+
+/* Адаптирую страницу для размеров экрана менее 1200px за счет размера карточек и отступов*/
+@media (max-width: 1200px) {
+    .digits {
+        flex-basis: 304px;
+    }
+    .promo-card {
+        margin: 15px 5px;
+    }
+    .card-icon {
+        padding: 28px 5px;
+    }     
+}
+/* Уменьшаю размер цифровых надписей для экранов менее 992px */
+@media (max-width: 992px) {
+    .digits-title {
+        font-size: 32px;
+    }
+    .card-icon-text {
+        font-size: 13px;
+    }
+}
+/* Переворачиваю все карточки в столбец для экранов менее 768px и восстанавливаю размеры карточке */
+@media (max-width: 768px) {
+    .promo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .promo-card {
+        flex-basis: unset;
+        width: 294px;
+    }
+    .digits {
+        width: 334px;
+    }
+    .card-icon {
+        padding: 28px 20px;
+    }
+    .card-icon-description {
+        flex-basis: unset;
+        width: 230px;
+    }
+
+}
